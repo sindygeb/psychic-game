@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(62, 65, 68);
+    background-image: url("http://blog.hostbaby.com/wp-content/uploads/2013/07/scuffedstatic_blue_1920x1234.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mainBody {
+    margin: auto;
+    background-color: #ffffff;
+    align-content: center;
+    text-align: center;
+    width: 690px;
+    height: auto;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+}
+header {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    border-bottom: darkblue solid 2px;
+    padding-bottom: 24px;
+}
+p {
+    font-family: 'Varela Round', sans-serif;
+}
+.gameText {
+    font-size: 24px;
+    padding: 20px;
+}
