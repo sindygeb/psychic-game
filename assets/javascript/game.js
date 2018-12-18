@@ -5,14 +5,14 @@ var ourLosses = 0;
 var guessCount = 10;
 var usedGuess = [];
 var compChoice = compChoice;
-var validKeys = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
     //generates the computer's random letter from array
-    compChoice = validKeys[Math.floor(Math.random()*validKeys.length)];
+    compChoice = letters[Math.floor(Math.random()*letters.length)];
     console.log(compChoice);
     
     function jsGuess() {
-        compChoice = validKeys[Math.floor(Math.random()*validKeys.length)];
+        compChoice = letters[Math.floor(Math.random()*letters.length)];
         console.log(compChoice);
     
     }
@@ -33,6 +33,8 @@ var validKeys = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p'
         jsGuess();
         if (userChoice !== compChoice) {
             guessCount--;
+            usedGuess.push()
+
         }
 
         //Losing - when counter reaches 0
@@ -43,7 +45,7 @@ var validKeys = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p'
             usedGuess = [];
             guessCount = 10;
         }
-            document.getElementById('playerGuess').html = usedArray;
+            document.getElementById('playerGuess').html = usedGuess;
             document.getElementById('ourWins').innerHTML = ourWins;
             document.getElementById('ourLosses').innerHTML = ourLosses;
             document.getElementById('guessCount').innerHTML = guessCount;
