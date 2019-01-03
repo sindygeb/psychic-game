@@ -30,11 +30,9 @@ var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','
         }
 
         //Incorrect Guess
-        jsGuess();
         if (userChoice !== compChoice) {
             guessCount--;
-            usedGuess.push()
-
+            usedGuess.push();
         }
 
         //Losing - when counter reaches 0
@@ -50,3 +48,4 @@ var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','
             document.getElementById('ourLosses').innerHTML = ourLosses;
             document.getElementById('guessCount').innerHTML = guessCount;
         }
+        jsGuess();
